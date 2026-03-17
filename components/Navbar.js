@@ -18,7 +18,7 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
-  const links = ['About', 'Clips', 'Affiliations', 'Contact'];
+  const links = ['About', 'Clips', 'Events', 'Affiliations', 'Contact'];
 
   const iconLinkStyle = {
     display: 'flex',
@@ -236,7 +236,7 @@ export default function Navbar() {
       <style jsx>{`
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
-          .hamburger { display: block !important; }
+          .hamburger { display: block !important;}
         }
       `}</style>
     </>
