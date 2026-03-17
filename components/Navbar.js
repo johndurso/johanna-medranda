@@ -178,7 +178,7 @@ export default function Navbar() {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              gap: '2rem',
+              gap: '1.25rem',
             }}
           >
             {links.map((link, i) => (
@@ -192,7 +192,7 @@ export default function Navbar() {
                 whileHover={{ scale: 1.05, color: '#E8D5C8' }}
                 style={{
                   fontFamily: 'Anton, sans-serif',
-                  fontSize: '3rem',
+                  fontSize: '2rem',
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
                 }}
