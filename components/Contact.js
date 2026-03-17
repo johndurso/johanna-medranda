@@ -34,6 +34,7 @@ export default function Contact() {
 
         <motion.a
           href="mailto:johannamedranda.comedy@gmail.com"
+          aria-label="Johanna Medranda's Contact Email"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
@@ -70,6 +71,7 @@ export default function Contact() {
             href="https://www.instagram.com/johanna.medranda"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Johanna Medranda's Instagram page"
             whileHover={{ scale: 1.2, rotate: 5 }}
             whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
@@ -80,6 +82,7 @@ export default function Contact() {
             href="https://www.youtube.com/@johanna.medranda"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Johanna Medranda's YouTube channel"
             whileHover={{ scale: 1.2, rotate: -5 }}
             whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.2, ease: 'easeOut' }}

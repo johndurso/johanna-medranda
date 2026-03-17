@@ -32,6 +32,7 @@ export default function Footer() {
         </p>
         <a
           href="mailto:johannamedranda.comedy@gmail.com"
+          aria-label="Johanna Medranda's Contact Email Address"
           style={{
             fontSize: '0.7rem',
             color: 'rgba(255,255,255,0.35)',
@@ -46,6 +47,7 @@ export default function Footer() {
             href="https://www.instagram.com/johanna.medranda"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Johanna Medranda's Instagram page"
             whileHover={{ scale: 1.2, rotate: 5 }}
             whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
@@ -56,6 +58,7 @@ export default function Footer() {
             href="https://www.youtube.com/@johanna.medranda"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Johanna Medranda's YouTube channel"
             whileHover={{ scale: 1.2, rotate: -5 }}
             whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
@@ -70,6 +73,7 @@ export default function Footer() {
         href="https://sleepingonthejobmedia.com"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Sleeping On The Job Media's website"
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
         transition={{ duration: 0.2, ease: 'easeOut' }}
@@ -78,7 +82,7 @@ export default function Footer() {
             src="/images/sotjm-logo_dark-mode.png"
             href="https://sleepingonthejobmedia.com"
             target="_blank"
-            alt="Sleeping on the Job Media"
+            alt="Sleeping on the Job Media logo"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

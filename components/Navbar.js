@@ -108,6 +108,7 @@ export default function Navbar() {
               href="https://www.instagram.com/johanna.medranda"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Johanna Medranda's Instagram page"
               style={{ ...iconLinkStyle, opacity: 0.75 }}
               whileHover={{ opacity: 1, scale: 1.15 }}
               transition={{ duration: 0.15 }}
@@ -127,6 +128,7 @@ export default function Navbar() {
               href="https://www.youtube.com/@johanna.medranda"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Johanna Medranda's YouTube channel"
               style={{ ...iconLinkStyle, opacity: 0.75 }}
               whileHover={{ opacity: 1, scale: 1.15 }}
               transition={{ duration: 0.15 }}
@@ -212,7 +214,7 @@ export default function Navbar() {
                 href="https://www.instagram.com/johanna.medranda"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram"
+                aria-label="Johanna Medranda's Instagram page"
                 whileHover={{ scale: 1.15, opacity: 1 }}
                 style={{ opacity: 0.75 }}
               >
@@ -222,7 +224,7 @@ export default function Navbar() {
                 href="https://www.youtube.com/@johanna.medranda"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="YouTube"
+                aria-label="Johanna Medranda's YouTube channel"
                 whileHover={{ scale: 1.15, opacity: 1 }}
                 style={{ opacity: 0.75 }}
               >

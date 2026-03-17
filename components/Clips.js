@@ -76,13 +76,17 @@ export default function Clips() {
             }}
           >
             Here are some of Johanna's live clips. Follow on{' '}
-            <a href="https://www.instagram.com/johanna.medranda" target="_blank" rel="noopener noreferrer"
-              style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#fff' }}>
+            <a href="https://www.instagram.com/johanna.medranda"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Johanna Medranda's Instagram page" 
+               style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#fff' }}>
               Instagram
             </a>{' '}
             or{' '}
-            <a href="https://www.youtube.com/@johanna.medranda" target="_blank" rel="noopener noreferrer"
-              style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#fff' }}>
+            <a href="https://www.youtube.com/@johanna.medranda"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Johanna Medranda's YouTube channel"
+               style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#fff' }}>
               YouTube
             </a>{' '}
             to see more!
