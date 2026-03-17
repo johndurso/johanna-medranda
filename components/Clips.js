@@ -41,7 +41,7 @@ export default function Clips() {
   return (
     <>
       <section id="clips" style={{
-        background: '#c9a990',
+        background: '#111',
         padding: '4rem 2rem 5rem',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -55,7 +55,7 @@ export default function Clips() {
             style={{
               textAlign: 'center',
               fontSize: 'clamp(2rem, 6vw, 3.5rem)',
-              color: 'var(--black)',
+              color: 'var(--beige-light)',
               marginBottom: '0.6rem',
             }}
           >
@@ -71,18 +71,18 @@ export default function Clips() {
             style={{
               textAlign: 'center',
               fontSize: '0.85rem',
-              color: 'rgba(0,0,0,0.65)',
+              color: 'rgba(255,255,255,0.85)',
               marginBottom: '3rem',
             }}
           >
             Here are some of Johanna's live clips. Follow on{' '}
             <a href="https://www.instagram.com/johanna.medranda" target="_blank" rel="noopener noreferrer"
-              style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#111' }}>
+              style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#fff' }}>
               Instagram
             </a>{' '}
             or{' '}
             <a href="https://www.youtube.com/@johanna.medranda" target="_blank" rel="noopener noreferrer"
-              style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#111' }}>
+              style={{ textDecoration: 'underline', textUnderlineOffset: '3px', color: '#fff' }}>
               YouTube
             </a>{' '}
             to see more!
@@ -144,9 +144,7 @@ export default function Clips() {
           </div>
         </div>
       </section>
-
-      <WaveDivider topColor="#c9a990" bottomColor="#c9a990" flip={true} />
-      <WaveDivider topColor="#c9a990" bottomColor="#111111" />
+      <WaveDivider topColor="#111" bottomColor="#c9a990" />
     </>
   );
 }

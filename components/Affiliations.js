@@ -41,7 +41,7 @@ export default function Affiliations() {
   return (
     <>
       <section id="affiliations" style={{
-        background: '#111111',
+        background: '#c9a990',
         padding: '4rem 2rem 5rem',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -55,7 +55,7 @@ export default function Affiliations() {
             style={{
               textAlign: 'center',
               fontSize: 'clamp(2rem, 6vw, 3.5rem)',
-              color: 'var(--beige-light)',
+              color: '#111',
               marginBottom: '3rem',
             }}
           >
@@ -119,7 +119,7 @@ export default function Affiliations() {
                   style={{
                     fontSize: '1.2rem',
                     fontWeight: 500,
-                    color: '#fff',
+                    color: '#111',
                     textDecoration: 'underline',
                     textUnderlineOffset: '3px',
                   }}
@@ -130,7 +130,7 @@ export default function Affiliations() {
                 {/* Role */}
                 <p style={{
                   fontSize: '0.95rem',
-                  color: 'rgba(255,255,255,0.55)',
+                  color: '#111',
                   lineHeight: 1.6,
                   whiteSpace: 'pre-line',
                 }}>
@@ -143,7 +143,7 @@ export default function Affiliations() {
         </div>
       </section>
 
-      <WaveDivider topColor="#111111" bottomColor="#111111" />
+      <WaveDivider topColor="#c9a990" bottomColor="#111111" />
     </>
   );
 }

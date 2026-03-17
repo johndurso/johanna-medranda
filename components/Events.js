@@ -293,7 +293,7 @@ export default function Events() {
           style={{ display: 'block', width: '100%', height: '80px' }}>
           <path
             d="M0,40 C180,0 360,80 540,40 C720,0 900,80 1080,40 C1260,0 1380,60 1440,40 L1440,80 L0,80 Z"
-            fill="#111111"
+            fill="#111"
           />
         </svg>
       </div>

@@ -149,8 +149,6 @@ export default function About() {
           </motion.div>
         </div>
       </section>
-
-      <WaveDivider topColor="#111111" bottomColor="#c9a990" />
     </>
   );
 }

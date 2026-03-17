@@ -22,9 +22,9 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Events />
         <Clips />
         <Affiliations />
-        <Events />
         <Contact />
       </main>
       <Footer />
