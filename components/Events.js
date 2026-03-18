@@ -11,9 +11,8 @@ function EventButton({ status, link }) {
 
   const base = {
     display: 'inline-block',
-    padding: '0.5rem 1.5rem',
+    padding: '0.5rem 1rem',
     fontSize: '0.7rem',
-    letterSpacing: '0.12em',
     textTransform: 'uppercase',
     fontFamily: 'Inter, sans-serif',
     fontWeight: 500,
