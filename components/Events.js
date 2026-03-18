@@ -233,7 +233,7 @@ export default function Events() {
                         {/* Date */}
                         {date && (
                           <div style={{
-                            minWidth: '250px',
+                            width: '300px',
                             flexShrink: 0,
                             color: '#111',
                           }}>
@@ -265,7 +265,7 @@ export default function Events() {
                             </p>
                           )}
                           {description && (
-                            <p style={{ fontSize: '0.85rem', color: 'rgba(0,0,0,0.55)', maxWidth: '400px', lineHeight: 1.6 }}>
+                            <p style={{ fontSize: '0.85rem', color: 'rgba(0,0,0,0.55)', width: '270px', lineHeight: 1.6 }}>
                               {description}
                             </p>
                           )}
@@ -273,7 +273,7 @@ export default function Events() {
                       </div>
 
                       {/* Button */}
-                      <div style={{ flexShrink: 0 }}>
+                      <div style={{ flexShrink: 0, width: '150px', textAlign: 'right' }}>
                         <EventButton status={status} link={link} />
                       </div>
                     </motion.div>
