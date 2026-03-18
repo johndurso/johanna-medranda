@@ -83,9 +83,17 @@ function EventButton({ status, link }) {
 }
 
 export default function Events() {
+  const [isMobile, setIsMobile] = useState(false);
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 592);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   useEffect(() => {
     fetch('/api/events')
@@ -229,24 +237,13 @@ export default function Events() {
                       }}
                     >
                       <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', flex: 1 }}>
-                        {/* Date */}
                         {date && (
-                          <div style={{
-                            width: '300px',
-                            flexShrink: 0,
-                            color: '#111',
-                          }}>
-                            <div style={{
-                              fontFamily: 'Anton, sans-serif',
-                              fontSize: '1.3rem',
-                              lineHeight: 1,
-                            }}>
+                          <div style={{ width: '300px', flexShrink: 0, color: '#111' }}>
+                            <div style={{ fontFamily: 'Anton, sans-serif', fontSize: '1.3rem', lineHeight: 1 }}>
                               {date}
                             </div>
                           </div>
                         )}
-
-                        {/* Info */}
                         <div>
                           <h3 style={{
                             fontFamily: 'Inter, sans-serif',
@@ -271,8 +268,7 @@ export default function Events() {
                         </div>
                       </div>
 
-                      {/* Button */}
-                      <div style={{ flexShrink: 0, width: '150px', textAlign: 'right' }}>
+                      <div style={{ flexShrink: 0, width: '150px', textAlign: isMobile ? 'left' : 'right' }}>
                         <EventButton status={status} link={link} />
                       </div>
                     </motion.div>
