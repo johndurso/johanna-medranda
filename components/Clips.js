@@ -115,6 +115,7 @@ export default function Clips() {
                     width: '100%',
                     aspectRatio: '16/9',
                     background: '#111',
+                    border: '2px solid var(--beige-light)',
                     overflow: 'hidden',
                     position: 'relative',
                     zIndex: clip.featured ? 2 : 1,
@@ -134,13 +135,13 @@ export default function Clips() {
                 <p style={{
                   marginTop: '0.8rem',
                   fontSize: '1.2rem',
-                  color: 'rgba(0,0,0,0.75)',
+                  color: 'rgba(255,255,255,0.75)',
                   textAlign: 'center',
                   fontWeight: 500,
                 }}>
                   {clip.title}
                 </p>
-                <p style={{ fontSize: '0.85rem', color: 'rgba(0,0,0,0.5)' }}>
+                <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)' }}>
                   ({clip.duration})
                 </p>
               </motion.div>

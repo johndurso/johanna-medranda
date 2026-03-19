@@ -18,7 +18,7 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
-  const links = ['About', 'Events', 'Clips', 'Affiliations', 'Contact'];
+  const links = ['About', 'Events', 'Clips', 'Affiliations', 'Book'];
 
   const iconLinkStyle = {
     display: 'flex',

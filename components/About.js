@@ -28,7 +28,7 @@ export default function About() {
         <div style={{
           background: '#111111',
           textAlign: 'center',
-          padding: '4rem 2rem 3rem',
+          padding: '0 3rem 3rem',
         }}>
           <motion.h2
             variants={fadeUp}
@@ -37,7 +37,7 @@ export default function About() {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             style={{
-              fontSize: 'clamp(3.5rem, 12vw, 9rem)',
+              fontSize: 'clamp(2.5rem, 12vw, 7rem)',
               color: 'var(--beige-light)',
               letterSpacing: '0.04em',
               lineHeight: 1,

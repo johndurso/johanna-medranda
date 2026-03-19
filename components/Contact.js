@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import InstagramIcon from './icons/InstagramIcon';
 import YouTubeIcon from './icons/YouTubeIcon';
+import MessageIcon from './icons/MessageIcon';
+import EmailIcon from './icons/EmailIcon';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -9,7 +11,7 @@ const fadeUp = {
 
 export default function Contact() {
   return (
-    <section id="contact" style={{
+    <section id="book" style={{
       background: '#111111',
       padding: '5rem 2rem 6rem',
       textAlign: 'center',
@@ -23,13 +25,13 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
           style={{
-            fontSize: 'clamp(2.5rem, 8vw, 5.5rem)',
+            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
             color: 'var(--beige-light)',
             lineHeight: 1.05,
-            marginBottom: '2rem',
+            marginBottom: '2.5rem',
           }}
         >
-          Contact or Book Johanna
+          Book Johanna
         </motion.h2>
 
         <motion.a
@@ -42,15 +44,35 @@ export default function Contact() {
           transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
           whileHover={{ color: '#ffffff' }}
           style={{
-            display: 'inline-block',
-            fontSize: '1rem',
+            position: 'relative',
+            width: '100px',
+            display: 'block',
+            fontSize: '1.5rem',
             color: 'rgba(255,255,255,0.7)',
-            textDecoration: 'underline',
-            textUnderlineOffset: '4px',
-            marginBottom: '2.5rem',
+            margin: '0 auto 20px auto',
           }}
         >
-          johannamedranda.comedy@gmail.com
+        <EmailIcon/> Email
+        </motion.a>
+        <motion.a
+          href="https://ig.me/m/johanna.medranda"
+          aria-label="Message Johanna Medranda on Instagram"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
+          whileHover={{ color: '#ffffff' }}
+          style={{
+            position: 'relative',
+            width: '420px',
+            display: 'block',
+            fontSize: '1.5rem',
+            color: 'rgba(255,255,255,0.7)',
+            margin: 'auto',
+          }}
+        >
+          <MessageIcon/> Direct message on Instagram
         </motion.a>
 
         {/* Social icons */}

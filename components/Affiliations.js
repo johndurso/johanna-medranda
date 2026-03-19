@@ -14,21 +14,20 @@ const affiliations = [
     link: 'https://www.instagram.com/donttelldetroit',
     logo: '/images/affiliations/dont-tell-comedy-detroit_logo.png',
     role: 'Co-Producer w/ Camila Ballario',
-    bg: '#111',
+    bg: '#000',
   },
   {
-    name: 'Mic Drop: Detroit',
-    link: 'https://www.micdropcomedydetroit.com/',
-    logo: '/images/affiliations/mic-drop-comedy-detroit.jpg',
-    role: 'Booker and Promoter',
-    bg: '#111',
+    name: 'Heavy Flow: A Night of Dirty Jokes',
+    logo: '/images/affiliations/heavy-flow.png',
+    role: 'Producer and Host',
+    bg: '#C10300',
   },
   {
     name: "Each Other's Mothers Podcast",
     link: 'https://linktr.ee/eachothersmotherspod',
     logo: '/images/affiliations/each-others-mothers_logo.png',
     role: 'Co-Host w/ Bre Snitchler',
-    bg: '#111',
+    bg: '#000',
   },
 ];
 
@@ -120,8 +119,7 @@ export default function Affiliations() {
                     fontSize: '1.2rem',
                     fontWeight: 500,
                     color: '#111',
-                    textDecoration: 'underline',
-                    textUnderlineOffset: '3px',
+                    textDecoration: 'none',
                   }}
                 >
                   {aff.name}
