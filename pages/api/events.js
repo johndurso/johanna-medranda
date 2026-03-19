@@ -7,6 +7,16 @@ export default async function handler(req, res) {
     '/values/Sheet1?key=' +
     apiKey;
 
+  function parseDate(str) {
+    if (!str) return null;
+    const slashParts = str.split('/');
+    if (slashParts.length === 3) {
+      return new Date(slashParts[2], slashParts[0] - 1, slashParts[1]);
+    }
+    const d = new Date(str);
+    return isNaN(d) ? null : d;
+  }
+
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -24,19 +34,27 @@ export default async function handler(req, res) {
       return h.trim().toLowerCase();
     });
 
+
+    console.log('Headers:', headers);
+    console.log('First data row:', rows[1]);
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
     const events = rows.slice(1).map(function(row) {
-    const obj = {};
-    headers.forEach(function(header, i) {
+      const obj = {};
+      headers.forEach(function(header, i) {
         obj[header] = row[i] || '';
-    });
-    return obj;
+      });
+      return obj;
+    }).filter(function(event) {
+      const eventDate = parseDate(event.date);
+      return eventDate !== null && eventDate >= today;
     });
 
     events.sort(function(a, b) {
-    return new Date(a.date) - new Date(b.date);
+      return parseDate(a.date) - parseDate(b.date);
     });
-
-    res.status(200).json(events);
 
     res.status(200).json(events);
   } catch (err) {
